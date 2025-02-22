@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-green-400 p-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <div class="text-white text-2xl font-bold">
+                <a href="#">Heights</a>
+            </div>
+
+            <!-- Menu -->
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-white hover:bg-green-700 px-4 py-2 rounded">Home</a>
+                <a href="#" class="text-white hover:bg-green-700 px-4 py-2 rounded">About</a>
+                <a href="#" class="text-white hover:bg-green-700 px-4 py-2 rounded">Services</a>
+                <a href="#" class="text-white hover:bg-green-700 px-4 py-2 rounded">Contact</a>
+            </div>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-black">
+            <a href="#" class="block text-white px-4 py-2">Home</a>
+            <a href="#" class="block text-white px-4 py-2">About</a>
+            <a href="#" class="block text-white px-4 py-2">Services</a>
+            <a href="#" class="block text-white px-4 py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!--Personal Information-->
+<section class="p-6 max-w-7xl mx-auto bg-gray-200">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Personal Info Section -->
+        <div class="">
+            <h1 class="font-bold text-3xl sm:text-4xl tracking-tight text-gray-700 mt-0">Daniel Okoh Yeboah</h1>
+            <h2 class="text-xl sm:text-1xl text-gray-700 tracking-wide mt-5">Junior Software Developer</h2>
+            <p class="mt-4 text-gray-600">
+                I'm a software developer specialized in frontend development. I am currently under training to become a full-stack engineer for complex, scalable web apps. I write about software development on 
+                <a href="#" class="text-green-500 italic hover:underline underline strong">my blog</a>. Want to know how I may help your project? Check out my 
+                <a href="#" class="text-green-500 hover:underline underline">portfolio</a> and 
+                <a href="#" class="text-green-500 hover:underline underline">online resume</a>.
+            </p>
+            <div class="mt-10 flex flex-wrap gap-4">
+                <button class="bg-green-400 text-white rounded-md px-6 py-3 font-semibold text-lg hover:bg-green-500 transition duration-300 ease-in-out">
+                    <ion-icon name="arrow-forward-circle" class="mr-2 inline-block"></ion-icon> Portfolio
+                </button>
+                <button class="bg-gray-700 text-white rounded-md px-6 py-3 font-semibold text-lg hover:bg-gray-800 transition duration-300 ease-in-out">
+                    <ion-icon name="document-text" class="mr-2 inline-block"></ion-icon> Resume
+                </button>
+            </div>
+        </div>
+
+        <!-- Profile Image Section -->
+        <div class="flex justify-start md:justify-center">
+            <img src="./profilepic.jpg" alt="Profile Image" class="w-auto h-80 rounded-md object-cover shadow-lg border-4 border-gray-500 mb-">
+        </div>
+
+        <!-- Spacer -->
+        <div></div>
+    </div>
+</section>
+
+
+<!--Experiences-->
+<section  class="p-6 max-w-7xl mx-auto">
+
+    <div class="flex">
+        <div class="h-[3rem] w-[0.5rem] bg-green-500"></div>
+        <h2 class="font-bold text-2xl sm:text-4xl tracking-wide text-black ml-5 mt-1">What I do</h2>
+    </div>
+
+    <div class="mt-5">
+       <p class="tracking-wide text-lg/7 ">I am currently a student @Codetrain Africa. I learn and code everyday following a scheduled approach with projects, assignments and class exercises. Below s a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my <a href="#" class="text-green-500 hover:underline">portfolio</a> and <a href="#" class="text-green-500 hover:underline">online resume</a>. </p> 
+    </div>
+
+    <div class="grid grid-cols-2 gap-10 mt-10">
+        <div>
+            <ion-icon name="logo-html5" class="text-white bg-green-500 w-8 h-8 rounded-md"></ion-icon>
+            <h2 class="font-bold text-xl mt-2 mb-2">HTML</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus cupiditate, similique eius corrupti veniam beatae illum consectetur natus voluptatibus. Quam sed omnis eum, eligendi laudantium esse a velit incidunt quibusdam.</p>
+        </div>
+
+        <div>
+            <ion-icon name="logo-css3" class="text-white bg-green-500 w-8 h-8 rounded-md"></ion-icon>
+            <h2 class="font-bold text-xl mt-2 mb-2">Traditional & Tailwind CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa alias iusto accusamus quis rerum earum, consectetur officia vero voluptatum ducimus incidunt corporis quia voluptate commodi?</p>
+        </div>
+
+        <div>
+            <ion-icon name="logo-github" class="text-white bg-green-500 w-8 h-8 rounded-md"></ion-icon>
+            <h2 class="font-bold text-xl mt-2 mb-2">Git/Github</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi, numquam tenetur error neque alias voluptatum amet velit assumenda est distinctio quisquam rem fugit, dignissimos vitae libero quas blanditiis et?</p>
+        </div>
+
+        <div>
+            <ion-icon name="code-slash" class="text-white bg-green-500 w-8 h-8 rounded-md"></ion-icon>
+            <h2 class="font-bold text-xl mt-2 mb-2">Linux</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi, numquam tenetur error neque alias voluptatum amet velit assumenda est distinctio quisquam rem fugit, dignissimos vitae libero quas blanditiis et?</p>
+        </div>
+
+    <!--Testimonials-->
+    
+    <section class="max-w-7xl mx-auto">
+        <div class="flex">
+            <div class="h-[3rem] w-[0.5rem] bg-green-500"></div>
+            <h2 class="font-bold text-2xl sm:text-4xl tracking-wide text-black ml-5 mt-1">Testimonials</h2>
+        </div>
+    </section>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Personal Information-->
+    <!--<section class="p-6">
+        <div class="">
+            <div class="">
+                <h1 class="font-bold text-2xl tracking-wide">Daniel Yeboah</h1>
+    
+                <h2 class="text-2xl">Junior Software Developer</h2>
+    
+                <p class="mt-2"> I'm a software developer specialized in frontend development. I am currently under training to become a full stack engineer for complex scalable web apps. I write about software development on <span><a href="#">my blog</a></span>. Want to know how i may help your project? Check out my project <span><a href="#">portfolio</a></span> and <span><a href="#">online resume</a></span>.</p>
+    
+                <div class="mt-5 ">
+                    <button class="bg-green-600 text-white rounded-md w-[8rem] p-3 font-bold"><ion-icon name="arrow-forward-circle" class="content-center"></ion-icon> Portfolio</button>
+                
+               
+                    <button class="ml-5 bg-black text-white rounded-md w-[8rem] p-3 font-bold"><ion-icon name="document-text" class="content-center"></ion-icon> Resume</button>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="mt-10">
+            <img src="./profilepic.jpg" class="w-32 h-auto" alt="Profile Image">
+        </div>
+
+    </section>-->
+
+
+    
+    <!--<section class="p-6"
+    <div class="max-w-4xl mx-auto">
+
+         
+         <div class="#">
+            <img src="./profilepic.jpg" class="w-32 h-32 rounded-lg object-cover mx-auto" alt="Profile Image">
+        </div>
+
+        <div class="text-center mt-5">
+            <h1 class="font-bold text-2xl tracking-wide">Daniel Yeboah</h1>
+
+            <h2 class="text-xl text-gray-600 mt-2">Junior Software Developer</h2>
+
+            <p class="mt-4 text-gray-800">I'm a software developer specialized in frontend development. I am currently under training <span><a href="#" class="text-blue-600">@Codetrain</a></span> to become a full-stack engineer for complex scalable web apps. I write about software development on <span><a href="#" class="text-green-600">my blog</a></span>. Want to know how I may help your project? Check out my <span><a href="#" class="text-green-600">portfolio</a></span> and <span><a href="#" class="text-green-600">online resume</a></span>.</p>
+
+            <div class="mt-5 space-x-4">
+                <button class="bg-green-600 text-white rounded-md w-[8rem] p-3 font-bold hover:bg-green-500 transition ease-in-out">
+                    <ion-icon name="arrow-forward-circle" class="content-center"></ion-icon> Portfolio
+                </button>
+
+                <button class="bg-black text-white rounded-md w-[8rem] p-3 font-bold hover:bg-gray-800 transition ease-in-out">
+                    <ion-icon name="document-text" class="content-center"></ion-icon> Resume
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section> -->
+
+
+
+
+
+
+
+
+
+
+
+    <!--IONICONS_SCRIPT-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // JavaScript to toggle the mobile menu
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>
