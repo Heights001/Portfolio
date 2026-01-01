@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import Navbar from "./components/Navbar";
 import PersonalInfo from "./components/PersonalInfo";
 import Experiences from "./components/Experiences";
@@ -14,6 +15,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <Analytics />
     </>
   );
 }

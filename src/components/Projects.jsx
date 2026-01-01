@@ -5,7 +5,7 @@ const projects = [
       "A responsive portfolio website built to showcase my skills, projects, and experience as a software developer.",
     tech: ["React", "Tailwind CSS", "Vite"],
     github: "https://github.com/Heights001/Portfolio",
-    live: "https://heights001.github.io/Portfolio/"
+    live: "https://portfolio-gamma-steel-70.vercel.app/"
   },
   {
     title: "True_Trace (Image analyzer App) ",
