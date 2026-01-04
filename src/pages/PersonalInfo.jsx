@@ -2,7 +2,7 @@ import profilePic from "../assets/image.jpg";
 
 function PersonalInfo() {
   return (
-    <section className="pt-24 p-6 max-w-7xl mt-20 mx-auto bg-gray-200">
+    <section id="personal" className="pt-24 p-6 max-w-7xl mt-20 mx-auto bg-gray-200">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Text */}
         <div>
@@ -19,9 +19,14 @@ function PersonalInfo() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <button className="bg-gray-700 text-white rounded-md px-6 py-3 font-semibold hover:bg-gray-800">
-              Resume
-            </button>
+            <a
+              href="/resume/Daniel_Yeboah_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-700 text-white rounded-md px-6 py-3 font-semibold hover:bg-gray-800 inline-block"
+            >
+             View Resume
+            </a>
           </div>
         </div>
 

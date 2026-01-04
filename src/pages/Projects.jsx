@@ -8,7 +8,7 @@ const projects = [
     live: "https://heights-portfolio.vercel.app/"
   },
   {
-    title: "True_Trace (Image analyzer App) ",
+    title: "True_Trace (Media analyzer App) ",
     description:
       "A web application that analyzes uploaded images and determines whether they are AI-generated or real — with user history and algorithmic scoring.",
     tech: ["React", "Firebase", "Tailwind CSS", "Vite"],
@@ -35,7 +35,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="p-6 max-w-7xl mx-auto bg-gray-100">
+    <section id="projects" className="p-6 max-w-7xl mx-auto bg-gray-100">
       <div className="flex items-center mb-6">
         <div className="h-12 w-2 bg-green-500"></div>
         <h2 className="font-bold text-2xl sm:text-4xl ml-5">

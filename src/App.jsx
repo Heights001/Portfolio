@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
-import PersonalInfo from "./components/PersonalInfo";
-import Experiences from "./components/Experiences";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import PersonalInfo from "./pages/PersonalInfo";
+import Experiences from "./pages/Experiences";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Experiences />
       <Projects />
       <Contact />
-      <Footer />
+      <Footer />      
     </>
   );
 }

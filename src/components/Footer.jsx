@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 mt-10">
@@ -21,7 +23,8 @@ function Footer() {
             Quick Links
           </h4>
           <ul className="space-y-2">
-            <li><a href="#about" className="hover:text-green-400">About</a></li>
+            <li><a href="#about"
+            className="hover:text-green-400">About</a></li>
             <li><a href="#experience" className="hover:text-green-400">Experience</a></li>
             <li><a href="#projects" className="hover:text-green-400">Projects</a></li>
             <li><a href="#contact" className="hover:text-green-400">Contact</a></li>
@@ -36,7 +39,7 @@ function Footer() {
 
           <div className="flex gap-4 text-xl">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Heights001"
               target="_blank"
               rel="noreferrer"
               className="hover:text-green-400"
@@ -45,7 +48,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/daniel-yeboah-6a8702269"
               target="_blank"
               rel="noreferrer"
               className="hover:text-green-400"
@@ -54,7 +57,7 @@ function Footer() {
             </a>
 
             <a
-              href="mailto:youremail@example.com"
+              href="mailto:danielyboah777@gmail.com"
               className="hover:text-green-400"
             >
               <ion-icon name="mail-outline"></ion-icon>

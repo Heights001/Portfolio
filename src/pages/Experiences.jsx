@@ -51,7 +51,7 @@ const skills = [
 
 function Experiences() {
   return (
-    <section className="p-6 max-w-7xl bg-gray-20 mx-auto">
+    <section id="experience" className="p-6 max-w-7xl bg-gray-20 mx-auto">
       <div className="flex items-center">
         <div className="h-12 w-2 bg-green-500"></div>
         <h2 className="font-bold text-2xl sm:text-4xl ml-5">
