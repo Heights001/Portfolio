@@ -5,7 +5,7 @@ const projects = [
       "A responsive portfolio website built to showcase my skills, projects, and experience as a software developer.",
     tech: ["React", "Tailwind CSS", "Vite"],
     github: "https://github.com/Heights001/Portfolio",
-    live: "https://portfolio-gamma-steel-70.vercel.app/"
+    live: "https://heights-portfolio.vercel.app/"
   },
   {
     title: "True_Trace (Image analyzer App) ",
@@ -13,7 +13,7 @@ const projects = [
       "A web application that analyzes uploaded images and determines whether they are AI-generated or real — with user history and algorithmic scoring.",
     tech: ["React", "Firebase", "Tailwind CSS", "Vite"],
     github: "https://github.com/Heights001/True-Trace",
-    live: ""
+    live: "https://true-trace-app.vercel.app/"
   },
   {
     title: "Reflections Detector App",
