@@ -8,12 +8,20 @@ const projects = [
     live: "https://heights-portfolio.vercel.app/"
   },
   {
-    title: "True_Trace (Media analyzer App) ",
+    title: "TrueTrace — Image Detection Platform",
     description:
-      "A web application that analyzes uploaded images and determines whether they are AI-generated or real — with user history and algorithmic scoring.",
-    tech: ["React", "Firebase", "Tailwind CSS", "Vite"],
-    github: "https://github.com/Heights001/True-Trace",
+      "A full-stack web application that detects whether images are AI-generated or real.",
+    tech: ["React", "Node.js", "Express", "Firebase (Auth, Firestore, Storage)", "Sightengine AI API", "Tailwind CSS", "Vite", "Deployments: Vercel (Frontend), Render (Backend)"],
+    github: "https://github.com/Heights001/True-Trace-App",
     live: "https://true-trace-app.vercel.app/"
+  },
+  {
+    title: "Round-Up Digital Piggy Bank",
+    description:
+      "A fullstack fintech web application that automatically saves spare change from digital transactions by rounding up each purchase to the nearest whole amount number and sweeping the difference into a virtual savings wallet — bringing the familiar susu and piggy bank experience to mobile money and debit card spending.",
+    tech: ["React", "Javascript", "Vite", "Firebase", "Node.js", "Express", "Firestore", "Tailwind CSS"],
+    github: "https://github.com/Heights001/Round-Up",
+    live: "https://round-up-change.vercel.app/login"
   },
   {
     title: "Reflections Detector App",
@@ -21,14 +29,6 @@ const projects = [
       "A small project which uses device camera or flash to try and detect reflections. A beginner project of hidden camera detection.",
     tech: ["React", "Javascript", "Vite"],
     github: "https://github.com/Heights001/Reflections-Detector",
-    live: ""
-  },
-  {
-    title: "Pizzeria Platform App",
-    description:
-      "A small project designed specifically for managing a pizza restaurant's Menu and Ordering. A beginner project of pizza restaurant's operations.",
-    tech: ["React", "Javascript", "Vite"],
-    github: "https://github.com/Heights001/pizza-website-react",
     live: ""
   }
 ];
