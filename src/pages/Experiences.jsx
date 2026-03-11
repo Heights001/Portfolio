@@ -46,6 +46,18 @@ const skills = [
     icon: "code-slash",
     description:
       "I am comfortable using the Linux command line for development tasks such as file navigation, running scripts, and managing projects."
+  },
+  {
+    title: "Backend Deployment & API Integration",
+    icon: "cloud-upload",
+    description:
+      "I deploy backend services to cloud platforms and integrate third-party APIs, connecting frontend applications to live, scalable backends."
+  },
+   {
+    title: "Node.js & Express",
+    icon: "server",
+    description:
+      "I am learning to build server-side applications and RESTful APIs using Node.js and Express, handling routing, middleware, and backend logic."
   }
 ];
 
@@ -60,10 +72,7 @@ function Experiences() {
       </div>
 
       <p className="mt-5 text-lg text-gray-700 max-w-3xl">
-        I am currently a software development student at Codetrain Africa,
-        gaining hands-on experience through structured coursework, projects,
-        and continuous practice. I am actively seeking internship
-        opportunities to learn, grow, and contribute to real-world products.
+        I am currently a software development student at Codetrain Africa,gaining hands-on experience through structured coursework, projects,and continuous practice.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
