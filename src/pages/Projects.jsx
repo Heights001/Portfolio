@@ -20,8 +20,8 @@ const projects = [
   {
     title: "Round-Up Digital Piggy Bank",
     description:
-      "A fullstack fintech web application that automatically saves spare change from digital transactions by rounding up each purchase to the nearest whole amount number and sweeping the difference into a virtual savings wallet — bringing the familiar susu and piggy bank experience to mobile money and debit card spending.",
-    tech: ["React", "Javascript", "Vite", "Firebase", "Node.js", "Express", "Firestore", "Tailwind CSS"],
+      "A fullstack fintech mobile-first application that automatically saves spare change from digital transactions by rounding up each purchase to the nearest whole amount number and sweeping the difference into a virtual savings wallet — bringing the familiar susu and piggy bank experience to mobile money and debit card spending.",
+    tech: ["React Native", "Typescrit", "Node.js", "Express", "NativeWind"],
     github: "https://github.com/Heights001/Round-Up",
     live: "https://round-up-change.vercel.app/",
     private: true
