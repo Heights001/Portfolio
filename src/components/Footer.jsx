@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 mt-10">
@@ -23,8 +21,7 @@ function Footer() {
             Quick Links
           </h4>
           <ul className="space-y-2">
-            <li><a href="#about"
-            className="hover:text-green-400">About</a></li>
+            <li><a href="#personal" className="hover:text-green-400">Personal Info</a></li>
             <li><a href="#experience" className="hover:text-green-400">Experience</a></li>
             <li><a href="#projects" className="hover:text-green-400">Projects</a></li>
             <li><a href="#contact" className="hover:text-green-400">Contact</a></li>

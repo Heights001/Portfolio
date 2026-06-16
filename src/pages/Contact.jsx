@@ -4,25 +4,21 @@ import emailjs from "@emailjs/browser";
 function Contact() {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         "service_yfhlfd8",
         "template_7twxepd",
         form.current,
         "U5Rg5W0h2xZKYPAsu"
-      )
-      .then(
-        () => {
-          alert("Message sent successfully!");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Failed to send message.");
-        }
       );
+      alert("Message sent successfully!");
+    } catch (error) {
+      console.log(error.text);
+      alert("Failed to send message.");
+    }
 
     e.target.reset();
   };
