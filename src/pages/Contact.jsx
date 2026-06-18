@@ -1,12 +1,30 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Send, Mail, LoaderCircle, CheckCircle, AlertCircle } from "lucide-react";
+
+function GithubIcon({ className }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+    </svg>
+  );
+}
+
+function LinkedinIcon({ className }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </svg>
+  );
+}
 
 function Contact() {
   const form = useRef();
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
 
   const sendEmail = async (e) => {
     e.preventDefault();
-
+    setStatus("sending");
     try {
       await emailjs.sendForm(
         "service_yfhlfd8",
@@ -14,72 +32,139 @@ function Contact() {
         form.current,
         "U5Rg5W0h2xZKYPAsu"
       );
-      alert("Message sent successfully!");
-    } catch (error) {
-      console.log(error.text);
-      alert("Failed to send message.");
+      setStatus("success");
+      e.target.reset();
+      setTimeout(() => setStatus("idle"), 5000);
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 4000);
     }
-
-    e.target.reset();
   };
 
+  const inputClass =
+    "w-full bg-zinc-900 border border-zinc-700 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/10 text-white placeholder-zinc-600 rounded-lg px-4 py-3 text-sm outline-none transition-all duration-200";
+
   return (
-    <section id="contact" className="p-6 max-w-7xl mx-auto bg-gray-100 mt-10">
-      <div className="flex items-center mb-6">
-        <div className="h-12 w-2 bg-green-500"></div>
-        <h2 className="font-bold text-2xl sm:text-4xl ml-5">
-          Contact Me
+    <section id="contact" className="py-24 px-6 bg-zinc-900/20">
+      <div className="max-w-2xl mx-auto text-center">
+        <p className="text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-4">
+          Get In Touch
+        </p>
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          Let's build something great together.
         </h2>
-      </div>
+        <p className="text-zinc-400 leading-relaxed mb-12">
+          Whether you're a recruiter looking for a sharp full-stack developer or
+          a client ready to kick off a project — I'd love to hear from you.
+        </p>
 
-      <p className="text-gray-700 max-w-2xl mb-10">
-        I am currently open to internship opportunities and collaborations.
-      </p>
+        <form ref={form} onSubmit={sendEmail} className="space-y-4 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-zinc-400 text-sm font-medium mb-2">
+                Name
+              </label>
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Your name"
+                required
+                className={inputClass}
+              />
+            </div>
+            <div>
+              <label className="block text-zinc-400 text-sm font-medium mb-2">
+                Email
+              </label>
+              <input
+                type="email"
+                name="user_email"
+                placeholder="you@company.com"
+                required
+                className={inputClass}
+              />
+            </div>
+          </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-
-        {/* Contact Info */}
-        <div className="space-y-6">
-          <p className="text-gray-800">danielyboah777@gmail.com</p>
-        </div>
-
-        {/* Contact Form */}
-        <form
-          ref={form}
-          onSubmit={sendEmail}
-          className="bg-white p-6 rounded-lg shadow space-y-4"
-        >
-          <input
-            type="text"
-            name="user_name"
-            placeholder="Your Name"
-            required
-            className="w-full border border-gray-300 rounded px-4 py-2"
-          />
-
-          <input
-            type="email"
-            name="user_email"
-            placeholder="Your Email"
-            required
-            className="w-full border border-gray-300 rounded px-4 py-2"
-          />
-
-          <textarea
-            name="message"
-            rows="4"
-            placeholder="Your Message"
-            required
-            className="w-full border border-gray-300 rounded px-4 py-2"
-          ></textarea>
+          <div>
+            <label className="block text-zinc-400 text-sm font-medium mb-2">
+              Message
+            </label>
+            <textarea
+              name="message"
+              rows={5}
+              placeholder="Tell me about your project or opportunity..."
+              required
+              className={`${inputClass} resize-none`}
+            />
+          </div>
 
           <button
             type="submit"
-            className="bg-green-500 text-white px-6 py-2 rounded font-semibold hover:bg-green-600"
+            disabled={status === "sending" || status === "success"}
+            className="w-full flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 disabled:opacity-60 disabled:cursor-not-allowed text-black font-semibold py-3.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-emerald-500/20"
           >
-            Send Message
+            {status === "sending" ? (
+              <>
+                <LoaderCircle className="w-4 h-4 animate-spin" /> Sending…
+              </>
+            ) : status === "success" ? (
+              <>
+                <CheckCircle className="w-4 h-4" /> Message Sent!
+              </>
+            ) : (
+              <>
+                <Send className="w-4 h-4" /> Send Message
+              </>
+            )}
           </button>
+
+          {status === "error" && (
+            <div className="flex items-center gap-2 text-red-400 text-sm justify-center">
+              <AlertCircle className="w-4 h-4 shrink-0" />
+              Failed to send. Please email me directly at{" "}
+              <a
+                href="mailto:danielyboah777@gmail.com"
+                className="underline underline-offset-2"
+              >
+                danielyboah777@gmail.com
+              </a>
+            </div>
+          )}
         </form>
+
+        {/* Divider */}
+        <div className="flex items-center gap-4 my-10">
+          <div className="flex-1 h-px bg-zinc-800" />
+          <span className="text-zinc-600 text-sm">or reach out directly</span>
+          <div className="flex-1 h-px bg-zinc-800" />
+        </div>
+
+        {/* Social links */}
+        <div className="flex items-center justify-center gap-8">
+          <a
+            href="https://github.com/Heights001"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm font-medium"
+          >
+            <GithubIcon className="w-5 h-5" /> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/daniel-yeboah-6a8702269"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm font-medium"
+          >
+            <LinkedinIcon className="w-5 h-5" /> LinkedIn
+          </a>
+          <a
+            href="mailto:danielyboah777@gmail.com"
+            className="flex items-center gap-2 text-zinc-400 hover:text-emerald-400 transition-colors text-sm font-medium"
+          >
+            <Mail className="w-5 h-5" /> Email
+          </a>
+        </div>
       </div>
     </section>
   );
