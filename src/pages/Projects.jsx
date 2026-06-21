@@ -10,6 +10,19 @@ function GithubIcon({ className }) {
 
 const featuredProjects = [
   {
+    badge: "Fintech · Data Science",
+    title: "VolForecast",
+    subtitle: "Commodity Futures Volume Forecasting",
+    businessDesc:
+      "Gives traders and analysts a 10-trading-day forward view of market volume for Gold, Crude Oil, Natural Gas, Copper, and Coffee futures — with calibrated confidence bands and honest model-quality scores, so users know exactly how much to trust the forecast.",
+    techDesc:
+      "Python data pipeline (yfinance → PostgreSQL on Railway) feeds a SARIMA(1,1,1)(1,0,1,5) model trained in log-volume space with weekly seasonality. Rolling-origin backtests compute MASE, MAPE, and RMSE. FastAPI serves pre-computed forecasts; GitHub Actions handles nightly ingest and weekly retraining via protected admin endpoints. React + Recharts PWA on Vercel.",
+    tech: ["Python", "FastAPI", "SARIMA", "PostgreSQL", "React", "Recharts", "Tailwind CSS", "Vite", "Railway", "GitHub Actions"],
+    github: "https://github.com/Heights001/Nasvols-forecast",
+    live: "https://nasvols-forecast.vercel.app",
+    isPrivate: false,
+  },
+  {
     badge: "AI Detection Platform",
     title: "TrueTrace",
     subtitle: "Full-Stack AI-Generated Image Detection",
