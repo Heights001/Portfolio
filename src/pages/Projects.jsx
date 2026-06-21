@@ -11,7 +11,7 @@ function GithubIcon({ className }) {
 const featuredProjects = [
   {
     badge: "Fintech · Data Science",
-    title: "VolForecast",
+    title: "NasVol Forecast",
     subtitle: "Commodity Futures Volume Forecasting",
     businessDesc:
       "Gives traders and analysts a 10-trading-day forward view of market volume for Gold, Crude Oil, Natural Gas, Copper, and Coffee futures — with calibrated confidence bands and honest model-quality scores, so users know exactly how much to trust the forecast.",
