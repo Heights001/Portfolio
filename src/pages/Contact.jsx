@@ -45,7 +45,7 @@ function Contact() {
     "w-full bg-zinc-900 border border-zinc-700 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/10 text-white placeholder-zinc-600 rounded-lg px-4 py-3 text-sm outline-none transition-all duration-200";
 
   return (
-    <section id="contact" className="py-24 px-6 bg-zinc-900/20">
+    <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 bg-zinc-900/20">
       <div className="max-w-2xl mx-auto text-center">
         <p className="text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-4">
           Get In Touch
@@ -141,7 +141,7 @@ function Contact() {
         </div>
 
         {/* Social links */}
-        <div className="flex items-center justify-center gap-8">
+        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
           <a
             href="https://github.com/Heights001"
             target="_blank"

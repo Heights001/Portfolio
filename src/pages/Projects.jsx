@@ -23,6 +23,19 @@ const featuredProjects = [
     isPrivate: false,
   },
   {
+    badge: "Fintech · Data Science",
+    title: "NasSpot",
+    subtitle: "FX & Crypto Spot-Price Intelligence Platform",
+    businessDesc:
+      "Gives traders a brutally honest, real-time view of 21 FX and crypto instruments — with per-number freshness badges (source, timestamp, market state) so users always know how fresh and certain each price is. Cross-asset regime reads, rolling correlations, and volatility-band badges surface relationships a single-asset screen hides.",
+    techDesc:
+      "FastAPI backend on Railway with lazy-refresh-on-read: serve latest from Neon Postgres, fetch upstream only when stale, single-flight via Postgres advisory lock to prevent stampede. TwelveData for FX (batch), CoinGecko + Coinbase for crypto; 190-pair Pearson correlation, realized-vol regime bands (30d rolling), and a seasonal-quantile crypto volume-activity forecast (M4) run via GitHub Actions daily cron. React/Vite PWA on Vercel with SWR auto-refresh.",
+    tech: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "React", "Vite", "Tailwind CSS", "CoinGecko API", "Twelve Data", "GitHub Actions", "Railway", "Neon", "Vercel"],
+    github: "https://github.com/Heights001/NasSpot-Tool",
+    live: "https://nasspottool-v1.vercel.app",
+    isPrivate: false,
+  },
+  {
     badge: "AI Detection Platform",
     title: "TrueTrace",
     subtitle: "Full-Stack AI-Generated Image Detection",
@@ -84,9 +97,9 @@ function TechBadge({ label, size = "md" }) {
 
 function Projects() {
   return (
-    <section id="work" className="py-24 px-6">
+    <section id="work" className="py-16 sm:py-24 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-16">
+        <div className="mb-12 sm:mb-16">
           <p className="text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-3">
             Selected Work
           </p>
@@ -100,7 +113,7 @@ function Projects() {
           {featuredProjects.map((project) => (
             <article
               key={project.title}
-              className="group bg-zinc-900 border border-zinc-800 hover:border-emerald-500/30 rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-emerald-900/10"
+              className="group bg-zinc-900 border border-zinc-800 hover:border-emerald-500/30 rounded-2xl p-5 sm:p-8 transition-all duration-300 hover:shadow-xl hover:shadow-emerald-900/10"
             >
               <div className="flex flex-wrap items-center gap-3 mb-5">
                 <span className="inline-flex items-center text-xs font-semibold text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-3 py-1 rounded-full">
@@ -113,7 +126,7 @@ function Projects() {
                 )}
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-1">
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">
                 {project.title}
               </h3>
               <p className="text-zinc-500 text-sm mb-7">{project.subtitle}</p>
@@ -146,7 +159,7 @@ function Projects() {
               </div>
 
               {/* Links */}
-              <div className="flex items-center gap-5">
+              <div className="flex flex-wrap items-center gap-4 sm:gap-5">
                 <a
                   href={project.github}
                   target="_blank"

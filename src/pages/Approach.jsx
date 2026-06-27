@@ -26,9 +26,9 @@ const principles = [
 
 function Approach() {
   return (
-    <section id="approach" className="py-24 px-6">
+    <section id="approach" className="py-16 sm:py-24 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-16">
+        <div className="mb-12 sm:mb-16">
           <p className="text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-3">
             The Approach
           </p>
@@ -41,7 +41,7 @@ function Approach() {
           {principles.map(({ Icon, number, title, description }) => (
             <div
               key={title}
-              className="relative group bg-zinc-900 border border-zinc-800 hover:border-emerald-500/30 rounded-2xl p-7 transition-all duration-300 overflow-hidden"
+              className="relative group bg-zinc-900 border border-zinc-800 hover:border-emerald-500/30 rounded-2xl p-5 sm:p-7 transition-all duration-300 overflow-hidden"
             >
               {/* Large number watermark */}
               <span className="absolute right-5 top-4 text-6xl font-bold text-zinc-800/60 select-none leading-none group-hover:text-emerald-900/40 transition-colors duration-300">

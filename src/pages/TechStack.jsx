@@ -22,11 +22,11 @@ function TechStack() {
   return (
     <section
       id="skills"
-      className="py-24 px-6"
+      className="py-16 sm:py-24 px-4 sm:px-6"
       style={{ background: "linear-gradient(to bottom, transparent, rgba(24,24,27,0.4), transparent)" }}
     >
       <div className="max-w-6xl mx-auto">
-        <div className="mb-16">
+        <div className="mb-12 sm:mb-16">
           <p className="text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-3">
             Tech Stack
           </p>
@@ -39,7 +39,7 @@ function TechStack() {
           {stacks.map(({ Icon, label, skills }) => (
             <div
               key={label}
-              className="group bg-zinc-900 border border-zinc-800 hover:border-emerald-500/30 rounded-2xl p-7 transition-all duration-300"
+              className="group bg-zinc-900 border border-zinc-800 hover:border-emerald-500/30 rounded-2xl p-5 sm:p-7 transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-7">
                 <div className="w-10 h-10 bg-emerald-400/10 border border-emerald-400/20 rounded-xl flex items-center justify-center group-hover:bg-emerald-400/15 transition-colors duration-300">
