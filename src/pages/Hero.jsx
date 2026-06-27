@@ -29,7 +29,7 @@ function Hero() {
         <div className="inline-flex items-center gap-2.5 bg-zinc-900/80 border border-zinc-700/50 rounded-full px-4 py-2 mb-10">
           <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
           <span className="text-zinc-400 text-sm font-medium">
-            Open to full-time roles & freelance projects
+            Open to roles & freelance projects
           </span>
         </div>
 
@@ -43,7 +43,7 @@ function Hero() {
         {/* Subheading */}
         <p className="text-zinc-400 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
           I bridge the gap between seamless user experiences (React) and
-          powerful backend architectures (Node.js, Firebase) — turning complex
+          powerful backend architectures — turning complex
           ideas into production-ready software.
         </p>
 
@@ -73,7 +73,6 @@ function Hero() {
           <div className="hidden sm:block w-px h-8 bg-zinc-800" />
           <div className="text-center">
             <p className="text-2xl font-bold text-white">Full-Stack</p>
-            <p className="text-zinc-500 text-sm">React · Node.js · Firebase</p>
           </div>
           <div className="hidden sm:block w-px h-8 bg-zinc-800" />
           <div className="text-center">

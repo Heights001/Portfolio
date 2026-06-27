@@ -25,7 +25,7 @@ function PersonalInfo() {
               rel="noopener noreferrer"
               className="bg-gray-700 text-white rounded-md px-6 py-3 font-semibold hover:bg-gray-800 inline-block"
             >
-             View Resume
+             Contact to request Resume
             </a>
           </div>
         </div>
