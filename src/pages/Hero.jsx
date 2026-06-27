@@ -34,7 +34,7 @@ function Hero() {
         </div>*/}
 
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight mb-6">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight">
           Full-Stack Engineer building{" "}
           <span className="text-emerald-400">high-performance</span> web apps
           that scale.
