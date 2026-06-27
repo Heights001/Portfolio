@@ -26,12 +26,12 @@ function Hero() {
 
       <div className="relative max-w-4xl mx-auto text-center">
         {/* Status badge */}
-        <div className="inline-flex items-center gap-2.5 bg-zinc-900/80 border border-zinc-700/50 rounded-full px-4 py-2 mb-10">
+        {/*<div className="inline-flex items-center gap-2.5 bg-zinc-900/80 border border-zinc-700/50 rounded-full px-4 py-2 mb-10">
           <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
           <span className="text-zinc-400 text-sm font-medium">
             Open to roles & freelance projects
           </span>
-        </div>
+        </div>*/}
 
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight mb-6">
