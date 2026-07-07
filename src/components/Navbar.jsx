@@ -78,10 +78,10 @@ function Navbar() {
           ))}
           <div className="pt-3 border-t border-zinc-800 mt-3">
             <a
-              href="#"
+              href="/resume/Daniel_Okoh_Yeboah_CV.pdf"
             >
               <Download className="w-4 h-4" />
-              Resume
+              Curriculum Vitae
             </a>
           </div>
         </div>
