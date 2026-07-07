@@ -45,13 +45,13 @@ function Navbar() {
 
         <div className="hidden md:flex">
           <a
-            href="/resume/Daniel_Yeboah_Resume.pdf"
+            href="/resume/Daniel_Okoh_Yeboah_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm font-medium text-zinc-300 border border-zinc-700 hover:border-emerald-500 hover:text-emerald-400 px-4 py-2 rounded-lg transition-all duration-200"
           >
             <Download className="w-4 h-4" />
-            Resume
+            Curriculum Vitae
           </a>
         </div>
 
@@ -79,6 +79,9 @@ function Navbar() {
           <div className="pt-3 border-t border-zinc-800 mt-3">
             <a
               href="/resume/Daniel_Okoh_Yeboah_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm font-medium text-zinc-300 border border-zinc-700 hover:border-emerald-500 hover:text-emerald-400 px-4 py-2 rounded-lg transition-all duration-200"
             >
               <Download className="w-4 h-4" />
               Curriculum Vitae
