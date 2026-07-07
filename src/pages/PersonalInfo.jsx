@@ -20,12 +20,12 @@ function PersonalInfo() {
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="/resume/Daniel_Yeboah_Resume.pdf"
+              href="/resume/Daniel_Okoh_Yeboah_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-700 text-white rounded-md px-6 py-3 font-semibold hover:bg-gray-800 inline-block"
             >
-             Contact to request Resume
+              Resume
             </a>
           </div>
         </div>
