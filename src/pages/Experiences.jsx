@@ -1,63 +1,63 @@
 const skills = [
   {
-    title: "HTML",
-    icon: "logo-html5",
-    description:
-      "I build well-structured and accessible web pages using semantic HTML, focusing on clarity, usability, and clean markup."
-  },
-  {
-    title: "CSS & Tailwind CSS",
-    icon: "logo-css3",
-    description:
-      "I design responsive user interfaces using CSS and Tailwind CSS, translating designs into clean, mobile-friendly layouts."
-  },
-  {
-    title: "JavaScript (ES6+)",
-    icon: "logo-javascript",
-    description:
-      "I use modern JavaScript features such as modules, arrow functions, and async/await to add interactivity and handle application logic."
-  },
-  {
-    title: "React",
+    title: "React & React Native",
     icon: "logo-react",
     description:
-      "I build component-based applications with React, using hooks like useState and useEffect to manage state and understand application flow."
+      "I build production-grade SPAs and cross-platform mobile apps with React and React Native, using hooks, context, and component-driven architecture to ship scalable UIs."
   },
   {
-    title: "Firebase",
-    icon: "flame",
-    description:
-      "I use Firebase for authentication, basic database operations with Firestore, and hosting small projects while learning backend concepts."
-  },
-  {
-    title: "Git & GitHub",
-    icon: "logo-github",
-    description:
-      "I use Git and GitHub to track code changes, collaborate on team projects, and follow version control best practices."
-  },
-  {
-    title: "Vite & Development Tools",
-    icon: "build",
-    description:
-      "I use Vite for fast development, npm for managing dependencies, and browser dev tools for debugging and improving code quality."
-  },
-  {
-    title: "Linux & Command Line",
+    title: "TypeScript",
     icon: "code-slash",
     description:
-      "I am comfortable using the Linux command line for development tasks such as file navigation, running scripts, and managing projects."
+      "I write type-safe, maintainable code across frontend and backend with TypeScript — interfaces, generics, and strict configs to catch bugs before they reach production."
   },
   {
-    title: "Backend Deployment & API Integration",
+    title: "Python & FastAPI",
+    icon: "logo-python",
+    description:
+      "I build high-performance REST APIs and async backends with FastAPI — background tasks, WebSockets, Pydantic validation, and auto-generated OpenAPI docs."
+  },
+  {
+    title: "Node.js & Express",
+    icon: "logo-nodejs",
+    description:
+      "I build RESTful APIs and middleware pipelines with Node.js and Express — routing, authentication, error handling, and integration with third-party services."
+  },
+  {
+    title: "AI/ML & LLM Integration",
+    icon: "hardware-chip",
+    description:
+      "I integrate LLMs (Gemini, OpenAI), build RAG pipelines with vector stores (ChromaDB), implement tool-calling agents, and train time-series models (SARIMA) for forecasting."
+  },
+  {
+    title: "PostgreSQL, SQLite & Firebase",
+    icon: "analytics",
+    description:
+      "I design schemas and queries for PostgreSQL and SQLite, and use Firebase Auth, Firestore, and Storage for rapid full-stack prototyping and real-time data."
+  },
+  {
+    title: "Tailwind CSS & NativeWind",
+    icon: "logo-css3",
+    description:
+      "I build responsive, design-system-driven UIs with Tailwind CSS on web and NativeWind on mobile — utility-first styling with dark mode and custom themes."
+  },
+  {
+    title: "Networking & Systems",
+    icon: "globe",
+    description:
+      "I build low-level network tools — asyncio DNS resolvers, connection collectors, and launchd daemons — with process attribution, SQLite telemetry, and WebSocket live feeds."
+  },
+  {
+    title: "Cloud & CI/CD",
     icon: "cloud-upload",
     description:
-      "I deploy backend services to cloud platforms and integrate third-party APIs, connecting frontend applications to live, scalable backends."
+      "I deploy and automate with Vercel, Railway, Render, and GitHub Actions — preview deploys, nightly cron jobs, and protected retraining pipelines."
   },
-   {
-    title: "Node.js & Express",
-    icon: "server",
+  {
+    title: "Async Architecture & WebSockets",
+    icon: "pulse",
     description:
-      "I am learning to build server-side applications and RESTful APIs using Node.js and Express, handling routing, middleware, and backend logic."
+      "I design concurrent systems with Python asyncio and Node.js event loops — background workers, real-time WebSocket streams, and SQLite WAL for non-blocking I/O."
   }
 ];
 
@@ -72,7 +72,7 @@ function Experiences() {
       </div>
 
       <p className="mt-5 text-lg text-gray-700 max-w-3xl">
-        I am currently a software development student at Codetrain Africa,gaining hands-on experience through structured coursework, projects,and continuous practice.
+        Entry level engineer passionate about building responsive, secured and scalable web applications. With experience in front-end and back-end technologies, as well as a keen interest in artificial intelligence and machine learning. I am eager to contribute my skills and knowledge to innovative projects and collaborate with like-minded professionals.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
