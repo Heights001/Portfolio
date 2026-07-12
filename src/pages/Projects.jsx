@@ -30,7 +30,7 @@ const projects = [
       "A powerful CLI and GUI tool to safely find and trash leftover Mac application files — Spotlight-powered search, grouped results by category, dry-run preview, and one-click trash via Finder integration.",
     tech: ["Python", "Tkinter", "macOS", "AppleScript"],
     github: "https://github.com/Heights001/TrueWipe",
-    private: false
+    private: true
   },
   {
     title: "Round-Up Digital Piggy Bank",
