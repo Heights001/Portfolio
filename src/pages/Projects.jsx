@@ -25,11 +25,11 @@ const projects = [
     private: true
   },
   {
-    title: "NasVol Forecast",
+    title: "True Wipe",
     description:
-      "Commodity Futures Volume Forecasting — gives traders a 10-trading-day forward view of market volume for Gold, Crude Oil, Natural Gas, Copper, and Coffee futures with calibrated confidence bands.",
-    tech: ["Python", "FastAPI", "SARIMA", "PostgreSQL", "React", "Recharts", "Vite", "Railway"],
-    github: "https://github.com/Heights001/Nasvols-forecast",
+      "A powerful CLI and GUI tool to safely find and trash leftover Mac application files — Spotlight-powered search, grouped results by category, dry-run preview, and one-click trash via Finder integration.",
+    tech: ["Python", "Tkinter", "macOS", "AppleScript"],
+    github: "https://github.com/Heights001/TrueWipe",
     private: false
   },
   {
